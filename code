@@ -1,0 +1,27 @@
+print('''
+     888d8b                                          888 
+     888Y8P                                          888 
+     888                                             888 
+ .d88888888 8888b. 88888b.d88b.  .d88b. 88888b.  .d88888 
+d88" 888888    "88b888 "888 "88bd88""88b888 "88bd88" 888 
+888  888888.d888888888  888  888888  888888  888888  888 
+Y88b 888888888  888888  888  888Y88..88P888  888Y88b 888 
+ "Y88888888"Y888888888  888  888 "Y88P" 888  888 "Y88888 
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+choose_side = input("Where do you want to go? Type left or right : " ).lower()
+if choose_side == "left":
+  choose_action = input("You came to the lake. What do you wanna do? swim or wait: ").lower()
+  if choose_action == "wait":
+    choose_boat = input("Here are two boats to choose. 'Small', 'Medium' or 'Big': ").lower()
+    if choose_boat == "small":
+      print("You are Winner!")
+    else:
+      print("Go home buddy")
+  else:
+    print("U cant even swim. You loser!")    
+else:
+  print("Youuu Loooserr!!!")  
+
